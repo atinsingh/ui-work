@@ -1,6 +1,9 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
+import NavButton from "./ui/navbutton"
+import NavLink from "./ui/navlink"
+
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
@@ -46,6 +49,10 @@ function Header({ siteTitle }) {
           >
             page 2
           </Link>
+   
+            <NavLink href="/ap" text="page3">Home</NavLink>
+            <NavButton href="#">SignIn</NavButton>
+          
         </div>
         <div>
           <a
