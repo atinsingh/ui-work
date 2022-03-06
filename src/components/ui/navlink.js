@@ -5,15 +5,16 @@ const NavLink = ({
             to, 
             children, 
             style='text-base font-medium text-white hover:text-gray-700', 
-            as='link'
+            as='link',
+            href
         })=>(
-    <Link  to={href} className={styles} >
+    <Link  to={href} className={style} >
         {children}
     </Link>
 )
-NavLink.propTypes = {
-    to: PropTypes.string.isRequired,
-    style: PropTypes.string.isRequired,
-    as: PropTypes.string.isRequired
-}
+// NavLink.propTypes = {
+//     to: PropTypes.string.isRequired,
+//     style: PropTypes.string.isRequired,
+//     as: PropTypes.string.isRequired
+// }
 export default NavLink;

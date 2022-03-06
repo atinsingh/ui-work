@@ -50,8 +50,9 @@ function Header({ siteTitle }) {
             page 2
           </Link>
    
-            <NavLink href="/ap" text="page3">Home</NavLink>
+            <NavLink  href="/ap" text="page3">Home</NavLink>
             <NavButton href="#">SignIn</NavButton>
+            <NavButton href="#">SignUp</NavButton>
           
         </div>
         <div>
